@@ -5,7 +5,7 @@
 loop:
 	mov r11b, [rdi+rax]
 	inc rax
-	cmp r11, 0
+	cmp r11b, 0
 	jne loop
 	dec rax
 	ret
