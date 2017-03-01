@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Wed Mar  1 12:27:26 2017 arnaud.alies
+** Last update Wed Mar  1 13:21:37 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -21,5 +21,5 @@ int main()
 
   lol = "huehueze";
   printf("strlen : %ld\n", strlen(lol));
-  printf("rindex z : %c\n", *rindex(lol, 'z'));
+  printf("rindex z : %p\n", rindex(lol, 'z'));
 }
