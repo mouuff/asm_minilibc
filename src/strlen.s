@@ -1,4 +1,3 @@
-;; nasm -felf64 test.s && cc test.o test.c && ./a.out
 
 	global strlen:function
 	section .text
