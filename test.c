@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 18:48:22 2017 arnaud.alies
+** Last update Thu Mar  2 19:14:11 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -27,7 +27,7 @@ int main()
   
   lol = "huehuEze";
   printf("strlen : %ld\n", strlen(lol));
-  printf("rindex z : %p\n", rindex(lol, 'z'));
+  printf("rindex z : %p %p\n", rindex(lol, 'z'), rindex(lol, 'a'));
   
   memset(me, 'c', 15);
   memset(me, 'b', 14);
@@ -46,11 +46,13 @@ int main()
 	 strcmp(popo, "hue"),
 	 strcmp("huehueze", lol),
 	 strcmp("h", zero),
-	 strcmp(huehue, zero));  
+	 strcmp(huehue, zero));
   printf("cmp: %d\t%d\t%d\t%d\t%d\n",
 	 strcasecmp("AuZhuez", lol),
 	 strcasecmp(popo, "hue"),
 	 strcasecmp("hhueze", lol),
 	 strcasecmp("A", zero),
-	 strcasecmp(huehue, zero));  
+	 strcasecmp(huehue, zero));
+  printf("strchr z : %p %p\n", strchr(lol, 'z'), rindex(me, 'z'));
+
 }
