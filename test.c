@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 13:28:24 2017 arnaud.alies
+** Last update Thu Mar  2 13:46:39 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -20,16 +20,16 @@ int strcmp(const char *s1, const char *s2);
 int main()
 {
   char *lol;
-  char *me = malloc(10);
+  char *me = malloc(15);
   
   lol = "huehueze";
   printf("strlen : %ld\n", strlen(lol));
   printf("rindex z : %p\n", rindex(lol, 'z'));
   
-  memset(me, 'c', 10);
-  memset(me, 'b', 8);
-  memset(me, 'a', 2);
-  for (int x = 0; x < 10; x += 1)
+  memset(me, 'c', 15);
+  memset(me, 'b', 14);
+  memset(me, 'a', 1);
+  for (int x = 0; x < 15; x += 1)
     {
       printf("%c", me[x]);
     }

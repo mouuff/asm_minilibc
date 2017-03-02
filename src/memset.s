@@ -2,14 +2,13 @@
 	section .text
 
 loop:
-	mov byte [rdi+r11], sil
-	inc r11
-	cmp r11, rdx
-	jb loop
+	dec rdx
+	mov byte [rdi+rdx], sil
+	cmp rdx, 0
+	jne loop
 	ret
 
 memset:
-	xor r11, r11
 	mov rax, rdi
 	jmp loop
 
