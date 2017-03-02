@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 18:28:23 2017 arnaud.alies
+** Last update Thu Mar  2 18:32:19 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -47,9 +47,9 @@ int main()
 	 strcmp("h", zero),
 	 strcmp(huehue, zero));  
   printf("cmp: %d\t%d\t%d\t%d\t%d\n",
-	 strcasecmp("HuEhuez", lol),
+	 strcasecmp("AuZhuez", lol),
 	 strcasecmp(popo, "hue"),
 	 strcasecmp("hhueze", lol),
-	 strcasecmp("h", zero),
+	 strcasecmp("A", zero),
 	 strcasecmp(huehue, zero));  
 }
