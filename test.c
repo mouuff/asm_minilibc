@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 18:32:19 2017 arnaud.alies
+** Last update Thu Mar  2 18:48:22 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -18,6 +18,7 @@ char *rindex(const char *s, int c);
 void *memset(void *s, int c, size_t n);
 int strcmp(const char *s1, const char *s2);
 int strcasecmp(const char *s1, const char *s2);
+char *strchr(const char *s, int c);
 
 int main()
 {
