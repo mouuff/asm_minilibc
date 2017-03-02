@@ -4,8 +4,8 @@
 
 loop:
 	;; strcmp below
-	mov al, [rsi+r11]
-	mov r10b, [rdi+r11]
+	mov al, [rdi+r11]
+	mov r10b, [rsi+r11]
 	sub eax, r10d
 	cmp eax, 0
 	jne exit
