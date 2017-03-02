@@ -11,7 +11,7 @@ loop:
 	mov al, byte [rdi]
 	mov r10b, byte [rsi]
 	sub eax, r10d
-	cmp byte eax, 0
+	cmp eax, 0
 	jne exit
 	
 	cmp byte [rdi], 0
