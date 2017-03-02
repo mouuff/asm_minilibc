@@ -4,11 +4,12 @@
 
 strcmp:
 	xor rax, rax
+	xor r10, r10
 	jmp loop
 
 loop:
-	mov al, [rdi]
-	mov r10b, [rsi]
+	mov al, byte [rdi]
+	mov r10b, byte [rsi]
 	sub eax, r10d
 	cmp byte eax, 0
 	jne exit
