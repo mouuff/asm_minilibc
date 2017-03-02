@@ -5,8 +5,9 @@
 loop:
 	;; strcmp below
 	mov al, [rsi+r11]
-	sub al, [rdi+r11]
-	cmp al, 0
+	mov r10b, [rdi+r11]
+	sub eax, r10d
+	cmp eax, 0
 	jne exit
 	;; loop conditions below
 	cmp byte [rdi+r11], 0
