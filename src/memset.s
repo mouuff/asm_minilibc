@@ -1,14 +1,16 @@
 	global memset:function
 	section .text
 
-loop:
+memset:
+	mov rax, rdi
+	cmp rdx, 0
+	jne .loop
+	ret
+
+.loop:
 	dec rdx
 	mov byte [rdi+rdx], sil
 	cmp rdx, 0
-	jne loop
+	jne .loop
 	ret
-
-memset:
-	mov rax, rdi
-	jmp loop
 
