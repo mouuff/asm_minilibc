@@ -5,7 +5,7 @@ loop:
 	mov byte [rdi+r11], sil
 	inc r11
 	cmp r11, rdx
-	jbe loop
+	jb loop
 	ret
 
 memset:
