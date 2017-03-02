@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 17:57:07 2017 arnaud.alies
+** Last update Thu Mar  2 18:28:23 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -24,7 +24,7 @@ int main()
   char *lol;
   char *me = malloc(15);
   
-  lol = "huehueze";
+  lol = "huehuEze";
   printf("strlen : %ld\n", strlen(lol));
   printf("rindex z : %p\n", rindex(lol, 'z'));
   
@@ -47,9 +47,9 @@ int main()
 	 strcmp("h", zero),
 	 strcmp(huehue, zero));  
   printf("cmp: %d\t%d\t%d\t%d\t%d\n",
-	 strcasecmp("huehuez", lol),
+	 strcasecmp("HuEhuez", lol),
 	 strcasecmp(popo, "hue"),
-	 strcasecmp("huehueze", lol),
+	 strcasecmp("hhueze", lol),
 	 strcasecmp("h", zero),
 	 strcasecmp(huehue, zero));  
 }
