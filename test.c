@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 15:35:03 2017 arnaud.alies
+** Last update Thu Mar  2 17:57:07 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -17,6 +17,7 @@ size_t strlen(const char *s);
 char *rindex(const char *s, int c);
 void *memset(void *s, int c, size_t n);
 int strcmp(const char *s1, const char *s2);
+int strcasecmp(const char *s1, const char *s2);
 
 int main()
 {
@@ -45,4 +46,10 @@ int main()
 	 strcmp("huehueze", lol),
 	 strcmp("h", zero),
 	 strcmp(huehue, zero));  
+  printf("cmp: %d\t%d\t%d\t%d\t%d\n",
+	 strcasecmp("huehuez", lol),
+	 strcasecmp(popo, "hue"),
+	 strcasecmp("huehueze", lol),
+	 strcasecmp("h", zero),
+	 strcasecmp(huehue, zero));  
 }
