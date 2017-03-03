@@ -1,20 +1,20 @@
 	global strchr:function
 	section .text
 
-loop:
-	inc rdi
-	cmp byte [rdi], 0
-	je exit
-	cmp sil, byte [rdi]
-	jne loop
-	;; ret
-	mov rax, rdi
-	jmp exit
-
 strchr:
-	dec rdi
-	xor rax, rax
+	mov rax, rdi
+	dec rax
+
+loop:
+	inc rax
+	cmp byte [rax], sil
+	je exit
+	cmp byte [rax], 0
+	je exitzero
 	jmp loop
+
+exitzero:
+	xor rax, rax
 
 exit:
 	ret

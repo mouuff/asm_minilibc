@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Thu Mar  2 19:14:11 2017 arnaud.alies
+** Last update Fri Mar  3 12:51:35 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -53,6 +53,10 @@ int main()
 	 strcasecmp("hhueze", lol),
 	 strcasecmp("A", zero),
 	 strcasecmp(huehue, zero));
-  printf("strchr z : %p %p\n", strchr(lol, 'z'), rindex(me, 'z'));
-
+  //printf("%s\n", lol);
+  printf("strchr z : %p %p %p %p\n",
+	 strchr(lol, 'z'),
+	 strchr(lol, 'a'),
+	 strchr(popo, 'o'),
+	 strchr(lol, 'h'));
 }
