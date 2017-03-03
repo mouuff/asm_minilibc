@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Fri Mar  3 12:51:35 2017 arnaud.alies
+** Last update Fri Mar  3 13:21:24 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -19,13 +19,14 @@ void *memset(void *s, int c, size_t n);
 int strcmp(const char *s1, const char *s2);
 int strcasecmp(const char *s1, const char *s2);
 char *strchr(const char *s, int c);
+size_t strcspn(const char *s, const char *reject);
 
 int main()
 {
   char *lol;
   char *me = malloc(15);
-  
   lol = "huehuEze";
+  
   printf("strlen : %ld\n", strlen(lol));
   printf("rindex z : %p %p\n", rindex(lol, 'z'), rindex(lol, 'a'));
   
@@ -59,4 +60,5 @@ int main()
 	 strchr(lol, 'a'),
 	 strchr(popo, 'o'),
 	 strchr(lol, 'h'));
+  printf("%d\n", strcspn(lol, "eu"));
 }
