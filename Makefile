@@ -5,7 +5,7 @@
 ## Login   <arnaud.alies@epitech.eu>
 ## 
 ## Started on  Wed Mar  1 10:57:37 2017 arnaud.alies
-## Last update Mon Mar  6 13:10:03 2017 arnaud.alies
+## Last update Mon Mar  6 13:15:43 2017 arnaud.alies
 ##
 
 NAME	=	libasm.so
@@ -26,6 +26,7 @@ SRCS	=	$(SRC)strlen.s \
 		$(SRC)strchr.s \
 		$(SRC)strcspn.s \
 		$(SRC)memcpy.s \
+		$(SRC)strncmp.s \
 
 OBJS	=	$(SRCS:.s=.o)
 

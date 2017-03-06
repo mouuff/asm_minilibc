@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Mon Mar  6 11:27:02 2017 arnaud.alies
+** Last update Mon Mar  6 13:14:51 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -61,4 +61,5 @@ int main()
 	 strchr(popo, 'o'),
 	 strchr(lol, 'h'));
   printf("%d\n", strcspn(lol, "E"));
+  printf("%d\n", strncmp(lol, "huehu", 50));
 }
