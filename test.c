@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Mon Mar  6 13:23:24 2017 arnaud.alies
+** Last update Mon Mar  6 13:27:30 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -63,7 +63,7 @@ int main()
   printf("%d\n", strcspn(lol, "E"));
   printf("%d\t%d\t%d\t%d\n",
 	 strncmp(lol, "huehu", 50),
-	 strncmp(lol, lol, 50),
-	 strncmp(lol, "sweggerrrrrrr", 50),
-	 strncmp(lol, "", 50));
+	 strncmp(lol, lol, 7),
+	 strncmp(lol, "sweggerrrrrrr", 6),
+	 strncmp(lol, "", 8));
 }
