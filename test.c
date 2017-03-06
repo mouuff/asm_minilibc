@@ -5,7 +5,7 @@
 ** Login   <arnaud.alies@epitech.eu>
 ** 
 ** Started on  Wed Jan 25 10:29:04 2017 arnaud.alies
-** Last update Mon Mar  6 13:27:30 2017 arnaud.alies
+** Last update Mon Mar  6 14:31:56 2017 arnaud.alies
 */
 
 #include <stdlib.h>
@@ -66,4 +66,8 @@ int main()
 	 strncmp(lol, lol, 7),
 	 strncmp(lol, "sweggerrrrrrr", 6),
 	 strncmp(lol, "", 8));
+
+  char str[] = "memmove can be very useful......";
+  memmove(str+20,str+15,11);
+  printf("%s\n", str);
 }
