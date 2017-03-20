@@ -3,8 +3,10 @@
 
 	
 nexit:
+	cmp BYTE [rsi], 0
+	je exit
 	xor rax, rax
-exit:	
+exit:
 	ret
 
 cmploop:
@@ -35,4 +37,5 @@ strstr:
 	xor rax, rax
         xor r8, r8
         xor r9, r9
+	mov rax, rdi
 	jmp frist
