@@ -5,7 +5,7 @@
 ## Login   <arnaud.alies@epitech.eu>
 ## 
 ## Started on  Wed Mar  1 10:57:37 2017 arnaud.alies
-## Last update Wed Mar 22 17:14:18 2017 desriac
+## Last update Fri Mar 24 13:36:24 2017 arnaud.alies
 ##
 
 NAME	=	libasm.so
@@ -49,10 +49,11 @@ fclean:	clean
 
 re:	fclean all
 
-test:	re
-	cc test.c
-	LD_PRELOAD=./$(NAME) ./a.out
+#test:	re
+#	cc test.c
+#	LD_PRELOAD=./$(NAME) ./a.out
+#
 
-.PHONY: all clean fclean re test
+.PHONY: all clean fclean re #test
 
 #nasm -felf64 src/strlen.s && cc src/strlen.o test.c && ./a.out
