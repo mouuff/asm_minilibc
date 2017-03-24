@@ -5,7 +5,7 @@
 ## Login   <arnaud.alies@epitech.eu>
 ## 
 ## Started on  Wed Mar  1 10:57:37 2017 arnaud.alies
-## Last update Fri Mar 24 13:36:24 2017 arnaud.alies
+## Last update Fri Mar 24 13:38:36 2017 arnaud.alies
 ##
 
 NAME	=	libasm.so
@@ -35,17 +35,19 @@ SRCS	=	$(SRC)strlen.s \
 
 OBJS	=	$(SRCS:.s=.o)
 
-%.o :	%.s
-	$(NASM) -f elf64 $< -o $@
+%.o :		%.s
+		$(NASM) -f elf64 $< -o $@
 
-all:	$(OBJS)
-	$(LD) -shared -fPIC -o $(NAME) $(OBJS)
+all:		$(NAME)
+
+$(NAME):	$(OBJS)
+		$(LD) -shared -fPIC -o $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+		$(RM) $(OBJS)
 
-fclean:	clean
-	$(RM) $(NAME)
+fclean:		clean
+		$(RM) $(NAME)
 
 re:	fclean all
 
